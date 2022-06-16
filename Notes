@@ -1,0 +1,10 @@
+## Windows SDK Python
+
+FileNotFoundError: Could not find module 'MvCameraControl.dll'. Try using the full path with constructor syntax.
+
+Solution:
+
+MVS dll files in this path 
+C:/Program Files (x86)/Common Files/MVS/Runtime/Win32_i86/MvCameraControl.dll
+change to full path and it shuld work and note 32 and  64 version 
+MvCamCtrldll = WinDLL("C:/Program Files (x86)/Common Files/MVS/Runtime/Win32_i86/MvCameraControl.dll")
